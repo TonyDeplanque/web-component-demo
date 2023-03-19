@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>How create basic button web component ?</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Original</legend>
+        <button>Submit</button>
+    </fieldset>
+
+    <fieldset>
+        <legend>WebComponent</legend>
+        <c-button label="Normal"></c-button>
+        <c-button label="Rounded" variant="rounded"></c-button>
+        <c-button label="Success" color="success"></c-button>
+        <c-button label="Danger" color="danger" variant="rounded"></c-button>
+        <c-button label="Warning" color="warning" variant="rounded"></c-button>
+    </fieldset>
+
+    <!-- we already need to put integration component at the end of body -->
+    <script src="components/button/Button.js"></script>
+    <script lang="javascript">
+        // Test set state
+        document.querySelectorAll('c-button').forEach(button => {
+            button.addEventListener('click', () => {
+                button.setAttribute('color', "danger")
+            })
+        })
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+button {
+    padding: .375rem .75rem;
+    border: none;
+    font-size: 1rem;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.button--rounded {
+    border-radius: 0.25rem;
+}
+
+.button--success {
+    background: #188803;
+    color: white;
+}
+
+.button--success:hover {
+    background: #147303FF;
+}
+
+.button--danger {
+    background: #c61112;
+    color: white;
+}
+
+.button--danger:hover {
+    background: #A20C0DFF;
+}
+
+.button--warning {
+    background: #ffc107;
+    color: black;
+}
+
+.button--warning:hover {
+    background: #D7A204FF;
+}
+
